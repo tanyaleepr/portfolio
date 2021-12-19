@@ -1,0 +1,30 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+   a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #d9dcd6;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  
+header {
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+  }
+  header nav {
+      background-color: #38b6ff;
+  }
