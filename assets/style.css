@@ -101,14 +101,13 @@ footer a {
 
 /* HERO STYLES START */
 .hero {
-  height: 500px;
-  width: 800px;
-  margin-top: 25px;
+  height: 800px;
+  width: 100%;
   margin-bottom: 25px;
-  margin-left: 25px;
+  background-image: url("/images/Untitled\ design\ \(6\)\ \(1\).png");
   background-size: cover;
   background-position: center;
-  }
+}
 
 .hero-text {
  text-align: center;
