@@ -1,53 +1,63 @@
-:root {
-  --primary-color: #ffffff;
-  --secondary-color: #024e76;
-  --tertiary-color: #38b6ff;
+/* Style for Tanya's Portfolio */
+
+:root{
+  --blue: #38b6ff;
+  --black: #0000;
+  --white: #ffff;
+  --light-gold: #dac92fb7;
 }
 
-* {
-  box-sizing: border-box;
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: var(--tertiary-color);
-  font-family: Helvetica, Arial, sans-serif;
+/* apply styles to body elements*/
+body{
+  color: var(--blue);
+  font-family:'Times New Roman', Times, serif;
+  background-color: var(--white);
 }
 
+section{
+  padding: 10px 40px;
+}
 
-/* HEADER / NAV BAR STYLES START */
-
+/* apply styles to the HEADER (NAVIGATION BAR) and FOOTER (same elements) */
 header {
   padding: 20px 35px;
-  background-color: var(--tertiary-color);
+  background-color: var(--blue);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
-   z-index: 9999;
+  top: 0; 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
 }
 
-header h1 {
+header h1, footer h2 {
   font-weight: bold;
+  font-size: 40px;
+  color: var(--white);
   margin: 0;
-  font-size: 36px;
-  color: var(--primary-color);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-header a {
+header a, footer a, footer p {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--white);
 }
 
-header nav {
+header nav, footer nav ul{
   margin: 7px 0;
 }
 
-header nav ul {
+header nav ul, footer nav ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -55,65 +65,119 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li a {
+header nav ul li a, footer nav ul li, footer nav ul li a, footer nav ul li p {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-
-header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
+/*header and footer -HOVER- */
+header nav ul li a:hover, footer nav ul li a:hover {
+  background: var(--white);
+  color: var(--blue);
+  border-radius: 10px;
   text-shadow: none;
+  text-decoration:underline;
 }
 
-/* HEADER / NAVBAR STYLES END */
+footer nav ul li p:hover{
+  background: var(--light-gold);
+  color: var(--white);
+  border-radius: 10px;
+  text-shadow: none;
+  text-decoration:underline;
+}
 
-
-
-/* FOOTER STYLES START */
+/* Footer styles */
 footer {
-  background: var(--primary-color);
-  padding: 40px 35px;
-  display: flex;
+  display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background: var(--light-gold);
   width: 100%;
+  padding: 40px 35px;
 }
 
 footer h2 {
-  color: var(--secondary-color);
-  font-size: 30px;
-  margin: 0;
+  padding-top: 16px;
+  color: var(--white);
+  font-size: 40px;
+  margin: 0; 
+  display: flex;
 }
 
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--secondary-color);
-}
-/* END FOOTER STYLES */
-
-/* HERO STYLES START */
+/* Hero */
 .hero {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("/images/Untitled\ design\ \(6\)\ \(1\).png");
-  background-size: cover;
-  background-position: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 25px;
+  flex:1;
+  background-image: url("../images/Untitled\ design\ \(5\).png");
+ }
+
+.hero h2, .work h2{
+  color: var(--blue);
+  font-size: 45px;
+  margin:0;
+  display: flex; 
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  text-decoration: underline;
 }
 
-.hero-text {
- text-align: center;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- color: white;
+.hero-body{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.hero p{
+  flex: 1; 
+  font-size: 1.5vw;
+  padding: 100px 25px;
+  justify-content: center;
+}
+
+/* Work styles */ 
+.run-buddy{
+  position: relative;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+
+.run-buddy img{
+  display: flex;
+  width: 100%;
+  border: 5px solid var(--black);
+  opacity: 0.75;
+  margin: 10px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.run-buddy img:hover{
+  opacity: 1;
+}
+
+.image-label h3{
+  color: var(--white);
+  background-color: var(--blue);
+  font-size: 1.5vw;
+  margin: 10px;
+  display: flex; 
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  padding: 15px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.image-label h3:hover{
+  background: var(--blue);
+  color: var(--black);
+  text-shadow: none;
+  text-decoration:underline;
 }
