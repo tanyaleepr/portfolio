@@ -106,13 +106,23 @@ footer h2 {
 
 /* Hero */
 .hero {
-  flex-wrap: wrap;
-  align-items: flex-start;
+  display: flex;
   margin: 15px;
-  flex:1;
+  flex: 1;
+  justify-content: center;
 }
 
-.hero h2, .work h2{
+.hero img {
+  align-self: center;
+  height: 300px;
+  width: 23%;
+  padding-right: 2%;
+}
+
+
+/* Work styles */ 
+
+.work h2{
   color: var(--blue);
   font-size: 45px;
   margin:0;
@@ -121,26 +131,6 @@ footer h2 {
   text-decoration: underline;
 }
 
-.hero-body{
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center;
-}
-.hero p{
-  flex: 1; 
-  font-size: 1.5vw;
-  padding: 10px 50px 30px 0;
-  
-}
-.hero img{
-  height: auto;
-  width: 30%;
-  border: 10px double var(--black);
-  padding: none;
-  border-radius: 8%;
-}
-
-/* Work styles */ 
 .about-me {
   display: flex;
   justify-content: space-between;
