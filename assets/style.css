@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-/* apply styles to body elements*/
+/* styles for body*/
 body{
   color: var(--blue);
   font-family:'Times New Roman', Times, serif;
@@ -24,25 +24,21 @@ section{
   padding: 10px 40px;
 }
 
-/* apply styles to the HEADER (NAVIGATION BAR) and FOOTER (same elements) */
+/* styles for header, nav, and footer using the same elements here*/
 header {
   padding: 20px 35px;
   background-color: var(--blue);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: sticky;
-  position: -webkit-sticky;
+  position: sticky -webkit-sticky; /*verify if this option works */
   top: 0; 
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
   z-index: 9999;
 }
 
 header h1, footer h2 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 45px;
   color: var(--white);
   margin: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -54,7 +50,7 @@ header a, footer a, footer p {
 }
 
 header nav, footer nav ul{
-  margin: 7px 0;
+  margin: 8px 0;
 }
 
 header nav ul, footer nav ul{
@@ -71,7 +67,7 @@ header nav ul li a, footer nav ul li, footer nav ul li a, footer nav ul li p {
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-/*header and footer -HOVER- */
+/*header and footer -HOVER effect- */
 header nav ul li a:hover, footer nav ul li a:hover {
   background: var(--white);
   color: var(--blue);
@@ -99,7 +95,7 @@ footer {
 }
 
 footer h2 {
-  padding-top: 16px;
+  padding-top: 18px;
   color: var(--white);
   font-size: 40px;
   margin: 0; 
@@ -110,10 +106,9 @@ footer h2 {
 .hero {
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 25px;
+  margin: 15px;
   flex:1;
-  background-image: url("../images/Untitled\ design\ \(5\).png");
- }
+}
 
 .hero h2, .work h2{
   color: var(--blue);
@@ -135,16 +130,21 @@ footer h2 {
   padding: 100px 25px;
   justify-content: center;
 }
+.hero img{
+  height: auto;
+  width:50%;
+  border: 10px double var(--black);
+  padding: none;
+}
 
 /* Work styles */ 
-.run-buddy{
+.run-buddy, .horiseon {
   position: relative;
   flex-wrap: wrap;
   flex: 1;
 }
 
-
-.run-buddy img{
+.work img{
   display: flex;
   width: 100%;
   border: 5px solid var(--black);
@@ -152,14 +152,25 @@ footer h2 {
   margin: 10px;
 }
 
+
 .row{
   display: flex;
   flex-direction: row;
 }
 
-.run-buddy img:hover{
+
+.horiseon {
+  width: 50%;
+  }
+
+.work-image{
+    height: 100%; 
+}
+
+.work img:hover{
   opacity: 1;
 }
+
 
 .image-label h3{
   color: var(--white);
