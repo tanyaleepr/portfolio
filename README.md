@@ -9,3 +9,5 @@ For this repository, I wrote the HTML and CSS for a sample professional portfoli
 - The website was designed to work on a variety of screen sizes, including tablets and smartphones.
 
 Link to deployed application: https://tanyaleepr.github.io/portfolio/
+
+<img scr="../assets/images/portfolio_screenshot.png">
