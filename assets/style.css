@@ -1,12 +1,5 @@
 /* Style for Tanya's Portfolio */
 
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root{
   --blue: #38b6ff;
   --black: #0000;
@@ -14,7 +7,18 @@
   --light-gold: #dac92fb7;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* general styling */
+body{
+  color: var(--blue);
+  font-family:'Times New Roman', Times, serif;
+  background-color: var(--white);
+}
 
 /* styles for header, nav, and footer using the same elements here*/
 header {
@@ -26,7 +30,7 @@ header {
 
 }
 
-header h1, footer h2 {
+header h1 {
   font-weight: bold;
   font-size: 45px;
   color: var(--white);
@@ -34,16 +38,16 @@ header h1, footer h2 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-header a, footer a, footer p {
+header a {
   text-decoration: none;
   color: var(--white);
 }
 
-header nav, footer nav ul{
+header nav {
   margin: 8px 0;
 }
 
-header nav ul, footer nav ul{
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -51,14 +55,15 @@ header nav ul, footer nav ul{
   list-style: none;
 }
 
-header nav ul li a, footer nav ul li, footer nav ul li a, footer nav ul li p {
+header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-/*header and footer -HOVER effect- */
-header nav ul li a:hover, footer nav ul li a:hover {
+
+/*header HOVER effect- */
+header nav ul li a:hover {
   background: var(--white);
   color: var(--blue);
   border-radius: 10px;
@@ -66,24 +71,10 @@ header nav ul li a:hover, footer nav ul li a:hover {
   text-decoration:underline;
 }
 
-footer nav ul li p:hover{
-  background: var(--light-gold);
-  color: var(--white);
-  border-radius: 10px;
-  text-shadow: none;
-  text-decoration:underline;
-}
-
-/* styles for body*/
-body{
-  color: var(--blue);
-  font-family:'Times New Roman', Times, serif;
-  background-color: var(--white);
-}
-
-section{
+/* section{
   padding: 10px 40px;
 }
+*/
 
 
 /* Footer styles */
@@ -104,6 +95,14 @@ footer h2 {
   display: flex;
 }
 
+footer nav ul li p:hover{
+  background: var(--light-gold);
+  color: var(--white);
+  border-radius: 10px;
+  text-shadow: none;
+  text-decoration:underline;
+}
+
 /* Hero */
 .hero {
   display: flex;
@@ -119,36 +118,9 @@ footer h2 {
   padding-right: 2%;
 }
 
-
-/* Work styles */ 
-
-.work h2{
-  color: var(--blue);
-  font-size: 45px;
-  margin:0;
-  display: flex; 
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  text-decoration: underline;
-}
-
-.about-me {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  padding-top: 30px;
-}
-
-.about-me p {
-  font-size: 20px;
-  padding: 0 30px;
-  line-height: 1.6;
-  width: 90%;
-}
-/* about me section styling end */
-
-/* my work section styling start */
+/* utility class styling start */
 .title {
-  border-right: 5px solid var(--black);
+  border-right: 5px solid var(--pop);
   min-height: 100%;
   text-align: right;
   padding-right: 40px;
@@ -160,14 +132,38 @@ footer h2 {
   font-size: 48px;
 }
 
-.work {
+/* utility class styling end */
+
+/* about me section styling start */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 30px;
+  background-color: var(--blue);
+}
+
+.about-me p {
+  font-size: 20px;
+  padding: 0 30px;
+  line-height: 1.6;
+  width: 90%;
+  color:var(--white);
+}
+.about-me h2 {
+  color:var(--white);
+}
+/* about me section styling end */
+
+/* my work section styling start */
+.my-work {
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
-  background-color: var(--black);
+  background-color: var(--white);
 }
 
-.work h2 {
+.my-work h2 {
   color: var(--blue);
 }
 
@@ -195,7 +191,7 @@ footer h2 {
   text-decoration: none;
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .project:hover {
@@ -205,7 +201,7 @@ footer h2 {
 .horiseon {
   grid-column: 1/3;
   grid-row: span 2;
-  background-image: url("assets/images/horiseon.PNG");
+  background-image:url("assets/images/horiseon.PNG");
 }
 
 .run-buddy-1 {
@@ -218,7 +214,7 @@ footer h2 {
   background-position: 60% 50%;
 }
 
-.run-buddy-3{
+.run-buddy-3 {
   background-image: url("assets/images/run-buddy.PNG");
 }
 
@@ -226,38 +222,65 @@ footer h2 {
   background-image: url("#");
 }
 
-.project-label {
+.project-name {
   /*background-color: var(--secondary);*/
-  background-color: lightgray;;
-  color: var(--blue);
+  background-color: var(--blue);
+  color: black;
   padding: 10px;
 }
+/* my work section styling end */
 
-/* its Hover time for Run Buddy and Horiseon areas in the Work section */
-.work img:hover{
-  opacity: 1;
+
+
+/* contact me for style */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  
 }
 
+.content-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.image-label h3{
+#contact-list {
+  width: 75%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+footer ul li {
+  /*padding-bottom: 15px;*/
+  font-weight: bold;
+
+}
+
+footer ul li a {
+  text-decoration: none;
   color: var(--white);
-  background-color: var(--blue);
-  font-size: 1.5vw;
-  margin: auto;
-  display: flex; 
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  z-index: 999;
-  padding: 15px;
-  position: absolute;
-  bottom: 15px;
-  left: 380px;
-  
+  padding: 8px;
+  font-weight: bold;
 }
 
-.image-label h3:hover{
-  background: var(--blue);
-  color: var(--black);
-  text-shadow: none;
-  text-decoration:underline;
-  
-}
+footer ul li a:hover {
+    background: var(--white);
+    color: var(--blue);
+    border-radius: 10px;
+    text-shadow: none;
+    text-decoration:underline;
+  }
+/* contact me section styling end */
