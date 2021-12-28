@@ -14,7 +14,7 @@ For this repository, I wrote the HTML and CSS for a sample professional portfoli
 
 ### Links
 
-* <a href="https://github.com/tanyaleepr/portfolio"> Link to the deployed website </a>
+* <a href="https://tanyaleepr.github.io/portfolio/"> Link to the deployed website </a>
 * <a href="https://github.com/tanyaleepr/portfolio"> Link for code repository </a>
 
 ![portfolio_screenshot](https://user-images.githubusercontent.com/92898110/147519538-2109cb68-af61-4d49-9a44-fff2f3d7d17b.png)
