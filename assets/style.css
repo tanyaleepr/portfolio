@@ -192,21 +192,21 @@ footer nav ul li p:hover{
 .horiseon {
   grid-column: 1/3;
   grid-row: span 2;
-  background-image:url("/assets/images/horiseon.PNG");
+  background-image:url("../assets/images/horiseon.PNG");
 }
 
 .run-buddy-1 {
-  background-image: url("/assets/images/run-buddy.PNG");
+  background-image: url("../assets/images/run-buddy.PNG");
   background-position: 50% 15%;
 }
 
 .run-buddy-2 {
-  background-image: url("/assets/images/run-buddy.PNG");
+  background-image: url("../assets/images/run-buddy.PNG");
   background-position: 60% 50%;
 }
 
 .run-buddy-3 {
-  background-image: url("/assets/images/run-buddy.PNG");
+  background-image: url("../assets/images/run-buddy.PNG");
 }
 
 .portfolio {
@@ -267,4 +267,21 @@ footer ul li a:hover {
     border-radius: 10px;
     text-shadow: none;
     text-decoration:underline;
+  }
+
+  @media screen and (max-width: 980px) {
+    .hero img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 768px) {
+
+
+  }
+  @media screen and (max-width: 575px) {
+    footer {
+      flex-direction: column;
+    }
+
   }
