@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* general styling */
@@ -75,7 +76,7 @@ footer {
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: var(--light-gold);
+  background: var(--blue);
   width: 100%;
   padding: 40px 35px;
 }
@@ -97,19 +98,17 @@ footer nav ul li p:hover{
 }
 
 /* Hero */
-.hero {
-  display: flex;
-  margin: 15px;
-  flex: 1;
+.hero img {
+  width: 1920px;;
+  height: 600px;
+  /*background-image: url(./images/Hi!\ \)\ \(470\ x\ 117\ px\)\ \(1920\ x\ 480\ px\)\ \(1400\ ×\ 500\ px\)\ \(1600\ ×\ 500\ px\).png); */
   justify-content: center;
+  align-items: center;
+  margin-bottom: -4px;
+  
+  
 }
 
-.hero img {
-  align-self: center;
-  height: 300px;
-  width: 23%;
-  padding-right: 2%;
-}
 
 /* utility class styling start */
 .title {
@@ -122,7 +121,8 @@ footer nav ul li p:hover{
 }
 
 .title h2 {
-  font-size: 48px;
+  font-size: 40x;
+  padding-bottom: 20px;
 }
 
 /* about me section */
@@ -189,28 +189,28 @@ footer nav ul li p:hover{
   opacity: 1.0;
 }
 
-.horiseon {
+.group-project-1{
   grid-column: 1/3;
   grid-row: span 2;
-  background-image:url("../assets/images/horiseon.PNG");
+  background-image:url("./images/superfan.png");
+}
+
+.horiseon {
+  background-image: url("./images/horiseon.PNG");
+  background-position: 50% 15%;
+}
+
+.taskinator {
+  background-image: url("./images/screencapture-tanyaleepr-github-io-taskinator-2022-02-02-21_36_23.png");
+  background-position: 60% 50%;
 }
 
 .run-buddy-1 {
   background-image: url("../assets/images/run-buddy.PNG");
-  background-position: 50% 15%;
 }
 
-.run-buddy-2 {
-  background-image: url("../assets/images/run-buddy.PNG");
-  background-position: 60% 50%;
-}
-
-.run-buddy-3 {
-  background-image: url("../assets/images/run-buddy.PNG");
-}
-
-.portfolio {
-  background-image: url("../assets/images/portfolio.PNG");
+.weather {
+  background-image: url("./images/150708780-e4175235-8613-4a75-b0c6-2644d846144f.png");
 }
 
 .project-name {
