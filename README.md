@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio - *This is not the official portfolio, this repository was just for practice*
 
 For this repository, I wrote the HTML and CSS for a sample professional portfolio which will be updated over time:
 
